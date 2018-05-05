@@ -1,0 +1,80 @@
+.switch {
+	width: 48px;
+	height: 36px;
+	position: relative;
+
+	.input {							 
+		position: absolute;
+		width: 100%;
+		height: 100%;							 
+		z-index: 100;							  
+		opacity: 0;							  
+		cursor: pointer;
+
+		&:checked ~ .label {    					
+    		background: linear-gradient(#ee831b 20%, #ff9a12 50%, #ffab04 80%); 
+    	}
+
+   		&:checked ~ .label-another {    					
+    		background: linear-gradient(#ee831b 20%, #ff9a12 50%, #ffab04 80%);   						
+   		}
+   	}
+				
+    .label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border: 1px solid #815801;
+		border-bottom-left-radius: 24px;
+		border-top-left-radius: 24px;
+		background: linear-gradient(to top, #e7e7e7, #edf0f0, #f3f7f8);	
+
+		.animate {
+	 		position: relative;
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	
+	 		.img {
+	 			position: absolute;
+	 			
+
+	 			.icons-o {
+	 				opacity: 0;  								
+	 			}
+	 		}	 		
+	 	}				 				
+	}
+
+	.label-another {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border: 1px solid #815801;
+		border-bottom-right-radius: 24px;
+		border-top-right-radius: 24px;
+		background: linear-gradient(to top, #e7e7e7, #edf0f0, #f3f7f8);
+
+	 	.animate {
+	 		position: relative;
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	
+	 		.img {
+	 			position: absolute;
+	 			
+
+	 			.icons-o {
+	 				opacity: 0;  								
+	 			}
+	 		}	 		
+	 	}						
+	}	
+}

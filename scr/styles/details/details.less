@@ -1,0 +1,65 @@
+.details {
+	width: 960px;
+	height: 372px;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 49px;
+	padding-bottom: 42px;
+	
+
+	.codeBlock {
+		width: 470px;
+		height: 282px;		
+
+		.caption {
+			font-size: 31px;
+			font-family: Source Sans Pro Light; 
+			color: #4e4e4e;
+			margin-bottom: 27px;			
+		}
+
+		.infoBlock {
+			display: block;	
+			width: 470px;
+			height: 282px;				
+
+			.avatar {
+				width: 176px;
+				height: 176px;
+				border-radius: 50%;
+				overflow: hidden;
+				position: relative;	
+				float: left;				
+				margin: 0 14px 0 0;				
+				display: inline-block; 
+			
+				&-img {
+					left: -70px;
+					position: absolute;										
+				}			
+			}
+
+			.text {
+				font-family: Source Sans Pro Light; 
+				font-size: 14px;								
+				height: 215px;
+				overflow: hidden;
+				display: block;	
+				text-align: right;
+				line-height: 22px;
+
+			}
+
+			&:before,
+			&:after {
+				content: "";
+				display: table;
+			}
+
+			&:after {
+				clear: both;
+			}
+		}		
+	}
+}
