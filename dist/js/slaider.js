@@ -12,6 +12,8 @@ $('.multiple-items').slick({
       rows: 1
 });
 
+
+
 $( function() {
     $( "#slider-range" ).slider({
       range: true,

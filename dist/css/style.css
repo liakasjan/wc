@@ -559,16 +559,19 @@
   width: 70px;
   height: 70px;
   margin: 0 -15px;
-  background: #000;
 }
 .userList .caption .multiple-img .img {
   width: 70px;
   hyphens: 70px;
-  opacity: 0.5;
   display: block;
 }
-.userList .caption .multiple-img .img:hover {
-  opacity: 1;
+.userList .slick-active {
+  height: 70px;
+  width: 70px;
+}
+.userList .slick-active:hover {
+  position: relative;
+  cursor: pointer;
 }
 .tab {
   margin-top: 20px;
