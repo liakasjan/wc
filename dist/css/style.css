@@ -134,15 +134,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-.form .name .text-name {
-  width: 320px;
-  height: 34px;
-  border: 1px solid #aa6e6f;
-  border-radius: 17px;
-  background: linear-gradient(to top, #f2f7f7, #eef1f1, #e7e7e8);
-  font-size: 18px;
-  margin: 15px 0;
-}
 .form .name .position {
   position: absolute;
   left: 363px;
@@ -181,6 +172,26 @@
   border-top: 10px solid transparent;
   border-right: 14px solid rgba(0, 0, 0, 0.8);
   border-bottom: 10px solid transparent;
+}
+.form .name .text-name {
+  width: 320px;
+  height: 34px;
+  border: 1px solid #aa6e6f;
+  border-radius: 17px;
+  background: linear-gradient(to top, #f2f7f7, #eef1f1, #e7e7e8);
+  font-size: 18px;
+  margin: 15px 0;
+}
+.form .name .text-name:focus + .position {
+  display: none;
+  z-index: 0;
+}
+.form .name .text-name:focus ~ .correctly {
+  display: block;
+  z-index: 1;
+}
+.form .name .text-name:focus {
+  border: 1px solid #909090;
 }
 .form .city {
   width: 320px;
