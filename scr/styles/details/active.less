@@ -77,29 +77,74 @@
 			font-family: Verdana; 
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			border-radius: 5px;
-			border: 1px solid #dcdcdc;
-			border-right: 1px solid #a2a2a2;
-			border-bottom: 1px solid #a2a2a2;
+			position: relative;
+			overflow: hidden;
+			border-right: 1px solid #a7a7a7;
+			border-left: 1px solid #a7a7a7;
+				
 
 
 
 			&-label {
-				width: 42px;				
-				background: #f4f8f9;
+				width: 55px;	
+				height: 100%;			
+				background: url("/hillel/wc/Icons/button.png");	
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				cursor: pointer;
-				position: relative;			
+				box-shadow: none;
+				position: absolute;				
+				top: 1px;
+
+
+				&:hover {
+					cursor: pointer;
+					background: url("/hillel/wc/Icons/button-activ.png");
+				}
+				
+			}
+
+			.step1 {
+				z-index: 4;
+				left: -7px;
+			}
+
+			.step2 {
+				z-index: 3;
+				
+				left: 35px;
+				
+			}
+
+			.step3 {
+				z-index: 2;
+				
+				left: 77px;
+				
+			}
+
+			.step4 {
+				z-index: 1;
+				
+				left: 119px;
+				
+			}
+
+			.step5 {
+				z-index: 0;
+				
+				left: 161px;
+				
 			}
 
 		.input {
 			display: none;
 
 			&:checked + .step-label {
-				background: #ffa10c; 					
-			}
+				background: url("/hillel/wc/Icons/button-click.png"); 					
+			}			
 		}
 	}
 

@@ -718,25 +718,53 @@
   font-family: Verdana;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  border: 1px solid #dcdcdc;
-  border-right: 1px solid #a2a2a2;
-  border-bottom: 1px solid #a2a2a2;
+  position: relative;
+  overflow: hidden;
+  border-right: 1px solid #a7a7a7;
+  border-left: 1px solid #a7a7a7;
 }
 .active-left .step-label {
-  width: 42px;
-  background: #f4f8f9;
+  width: 55px;
+  height: 100%;
+  background: url("/hillel/wc/Icons/button.png");
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: none;
+  position: absolute;
+  top: 1px;
+}
+.active-left .step-label:hover {
   cursor: pointer;
-  position: relative;
+  background: url("/hillel/wc/Icons/button-activ.png");
+}
+.active-left .step .step1 {
+  z-index: 4;
+  left: -7px;
+}
+.active-left .step .step2 {
+  z-index: 3;
+  left: 35px;
+}
+.active-left .step .step3 {
+  z-index: 2;
+  left: 77px;
+}
+.active-left .step .step4 {
+  z-index: 1;
+  left: 119px;
+}
+.active-left .step .step5 {
+  z-index: 0;
+  left: 161px;
 }
 .active-left .step .input {
   display: none;
 }
 .active-left .step .input:checked + .step-label {
-  background: #ffa10c;
+  background: url("/hillel/wc/Icons/button-click.png");
 }
 .active-left .slider {
   width: 210px;
