@@ -9,7 +9,8 @@
 		margin-bottom: 27px;
 
 		.multiple {
-			width: 390px;			
+			width: 390px;	
+			position: relative;		
 
 			&-img {
 				width: 70px;
@@ -21,8 +22,8 @@
 					hyphens: 70px;					
 					display: block;													
 				}
-			}			
-		}			
+			}						
+		}	
 	}
 
 	.slick-active {
@@ -31,7 +32,28 @@
 
 		&:hover {
 			position: relative;			
-			cursor: pointer;			
+			cursor: pointer;	
+			opacity: 0.4;		
 		}
 	}
+
+	.background-block {
+		position: absolute;
+		display: flex;
+		width: 390px;
+		justify-content: space-around;
+
+		.block {
+			width: 70px;
+			height: 70px;			
+			background: #000;	
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-family: Source Sans Pro ExtraLight;
+			font-size: 16px;
+			color: #fff;			
+		}
+	}	
 }
