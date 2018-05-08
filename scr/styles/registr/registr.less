@@ -3,6 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 0;
 
 	.container {
 		width: 100%;
@@ -11,17 +12,21 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		
+		
 
 		&-registr {
 			width: 960px;
 			height: 466px;
 			background: #f8f8f8;
 			margin: 18px 0;
-			display: flex;			
+			display: flex;
+					
 
 			.single {
 				width: 480px;
-				height: 466px;				
+				height: 436px;
+				z-index: 2;				
 					
 				.img {
 					width: 480px;
@@ -50,6 +55,41 @@
 						top: -37px;
 					}
 				}
+			}
+		}	
+
+		.effect	{
+			position: relative;
+			
+		
+			&:before, 
+			&:after {
+				z-index: 1;
+				position: absolute;
+				content: "";
+				bottom: 9px;
+				left: 10px;
+				width: 50%;
+				top: 80%;
+				max-width:350px;				
+				-webkit-box-shadow: 0 16px 6px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 0 16px 6px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 16px 6px rgba(0, 0, 0, 0.2);
+				-webkit-transform: rotate(-2deg);
+				-moz-transform: rotate(-2deg);
+				-o-transform: rotate(-2deg);
+				-ms-transform: rotate(-2deg);
+				transform: rotate(-2deg);
+			}
+			
+			&:after	{
+				-webkit-transform: rotate(2deg);
+				-moz-transform: rotate(2deg);
+				-o-transform: rotate(2deg);
+				-ms-transform: rotate(2deg);
+				transform: rotate(2deg);
+				right: 10px;
+				left: auto;				
 			}
 		}
 	}
